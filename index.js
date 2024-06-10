@@ -3,7 +3,7 @@ const app = express();
 const port = 5000 || process.env.PORT;
 
 app.post("/api/successfullyPayment", (req, res) => {
-  console.log('req >> ', req.body);
+  console.log('req >> ', req);
   res.send("Hello World!");
 });
 
