@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 5000 || process.env.PORT;
 
-app.get("/api/successfullyPayment", (req, res) => {
+app.post("/api/successfullyPayment", (req, res) => {
   console.log(req);
   res.send("Hello World!");
 });
