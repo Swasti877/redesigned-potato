@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.post("/api/successfullyPayment", (req, res) => {
-  console.log('req >> ', req);
+  console.log('req >> ', req.body);
   res.send("Hello World!");
 });
 
